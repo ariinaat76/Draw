@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #canvas{
+            border: 3px dashed black
+        }
+
+        .changeColor{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between 
+    
+        }
+    
+        .col{
+            width: 100px;
+            height: 100px;
+            
+        }
+
+        #r{
+            background-color: #B22222;
+        }
+
+        #b{
+            background-color: #1E90FF ;
+        }
+
+        #g{
+            background-color: #00FF7F;
+        }
+
+        #o{
+            background-color: #FF8C00;
+        }
+
+        #p{
+            background-color: #FF69B4;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="changeColor">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <div id="r" class="col" onclick="changeColor('#B22222')"> red</div>
+        <div id="b" class="col" onclick="changeColor('#1E90FF')"> blue</div>
+        <div id="g" class="col" onclick="changeColor('#00FF7F')"> green</div>
+        <div id="o" class="col" onclick="changeColor('#FF8C00')"> orange</div>
+        <div id="p" class="col" onclick="changeColor('#FF69B4')"> pink</div>
+        <div id="l" class="col" onclick="changeColor('white')"> <img src="https://cdn-icons-png.flaticon.com/512/43/43279.png" alt="Ластик" height="100px" width="100px"></div>
+        
+    </div> 
+    
+    <script src="script.js"></script>
+</body>
+</html>
